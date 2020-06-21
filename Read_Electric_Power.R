@@ -3,6 +3,11 @@
 # memory. To do so, we first read the header of the file, used to read only the 
 # `Dates` variable. Afterwards, we analyse dates and pick only the needed range.
 
+# The dataset is encapsulated in a zip file
+## zip file name
+zip_name <- "exdata-data-household_power_consumption.zip"
+unzip(zip_name, exdir = "./")
+
 ## File name
 file_name <- "household_power_consumption.txt"
 
